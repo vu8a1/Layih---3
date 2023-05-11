@@ -61,17 +61,17 @@ function changeExchangeCurrency(e) {
 }
 
 inpLeft.addEventListener('input', (e) => {
-    if(e.target.value === '') {
-        e.target.value = 0;
-    }
+   // if(e.target.value === '') {
+    //    e.target.value = 0;
+   // }
     e.target.value = e.target.value.replaceAll(',', '.');
     getData(currentCurr, exchangeCurr, inpLeft, inpRight);
 });
 
 inpRight.addEventListener('input', (e) => {
-    if(e.target.value === '') {
-        e.target.value = 0;
-    }
+  //  if(e.target.value === '') {
+   //     e.target.value = 0;
+   // }
     e.target.value = e.target.value.replaceAll(',', '.');
     getData(exchangeCurr, currentCurr, inpRight, inpLeft);
 });
